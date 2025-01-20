@@ -7,9 +7,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/js/coreui.min.js" integrity="sha384-c4nHOtHRPhkHqJsqK5SH1UkyoL2HUUhzGfzGkchJjwIrAlaYVBv+yeU8EYYxW6h5" crossorigin="anonymous"></script> 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/js/coreui.min.js" integrity="sha384-c4nHOtHRPhkHqJsqK5SH1UkyoL2HUUhzGfzGkchJjwIrAlaYVBv+yeU8EYYxW6h5" crossorigin="anonymous"></script>  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description" content="Portfolio of Mohammed Abdul Raqueeb Ali">
+    <meta name="keywords" content="Portfolio, Developer, Projects">
+    <meta name="author" content="Mohammed Abdul Raqueeb Ali">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     
@@ -18,77 +26,151 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/r_logo.jpg" alt="Bootstrap" width="30" height="24" class="align-text-top">
+                    <img src="./r_logo.jpg" alt="Bootstrap" width="30" height="24" class="align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#About">About</a>
-                        <a class="nav-link" href="#Resume">Resume</a>
-                        <a class="nav-link" href="#Portfolio">Portfolio</a>
-                        <a class="nav-link" href="#Contactus">Contact Us</a>
+                        <a class="nav-link active" aria-current="page" href="#introduce">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#resume">Resume</a>
+                        <a class="nav-link" href="#education">Portfolio</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
+                <!-- <button id="dark-mode-toggle" class="btn btn-dark">Dark Mode</button> -->
             </div>
         </nav>
     </section>
 
-    <!-- Introduction Section -->
-    <section id="introduce" class="intro">
+<!-- Hero Section -->
+    <section id="introduce" class="introduce py-5 ">
         <div class="container">
-            <div class="col-lg-8 text-center">
-                <h2>I'm Mohammed Abdul Raqueeb Ali</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <!-- Name Heading -->
+                    <h1 class="display-8 fw-bold mt-4 hero-heading">Hello, World!</h1>
+                    <h2 class="display-6 fw-bold">I'm Mohammed Abdul Raqueeb Ali</h2>
+                    <p class="introduce-position">
+                        <span>Developer</span>
+                    </p>
+                    <a class="btn btn-dark" href="#about" role="button">Learn More About Me</a>
+                </div>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-auto">
+                    <ul class="introduce-social list-inline">
+                        <!-- LinkedIn -->
+                        <li class="list-inline-item">
+                        <a 
+                            class="btn text-white btn-floating m-1 button-linkedin" 
+                            style="background-color: #0082ca;" 
+                            href="https://www.linkedin.com/in/mohammed-abdul-raqueeb-ali-866744270" 
+                            role="button" 
+                            title="Join my Linkedin.">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        </li>
+                        <!-- GitHub -->
+                        <li class="list-inline-item">
+                        <a 
+                            class="btn text-white btn-floating m-1 button-github" 
+                            style="background-color: #333333;" 
+                            href="https://github.com/raqueebali" 
+                            role="button" 
+                            title="Join my GitHub.">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        </li>
+                        <!-- LeetCode -->
+                        <li class="list-inline-item">
+                        <a 
+                            class="btn text-white btn-floating m-1 button-leetcode" 
+                            style="background-color: rgb(236, 165, 85);" 
+                            href="https://leetcode.com/u/raqueebali/" 
+                            role="button" 
+                            title="Join my LeetCode.">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-leetcode">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 13h7.5" />
+                            <path d="M9.424 7.268l4.999 -4.999" />
+                            <path d="M16.633 16.644l-2.402 2.415a3.189 3.189 0 0 1 -4.524 0l-3.77 -3.787a3.223 3.223 0 0 1 0 -4.544l3.77 -3.787a3.189 3.189 0 0 1 4.524 0l2.302 2.313" />
+                            </svg>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-5">
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h4 class="text-center about-head">ABOUT</h4>
-                    <h2 class="text-center">Let me introduce myself.</h2>
-                    <div class="about-container mt-4">
-                        <img src="images/PXL_20240707_034234208.MP-POP_OUT.jpg" alt="Profile" class="rounded-profile my-3">
-                        <p class="display-1 intro-para">I am a passionate developer with expertise in building modern web applications using the latest technologies. I am hearing impaired for both ears. Explore my projects and skills below. My expertise includes front-end development, back-end development, cloud computing, command-line Interface tools and database management system. Additionally, I have a strong focus on any development with keen in interest.</p>
+                    <!-- Section Heading -->
+                    <h4 class="text-center text-primary about-head">ABOUT</h4>
+                    <h2 class="text-center mb-4">Let me introduce myself</h2>
+                    <!-- About Content -->
+                    <div class="about-container text-center d-flex flex-column align-items-center">
+                        <!-- Profile Image -->
+                        <img 
+                        src="images/PXL_20240707_034234208.MP-POP_OUT.jpg" 
+                        alt="Profile" 
+                        class="rounded-circle img-fluid mb-4 shadow" 
+                        style="width: 150px; height: 150px; object-fit: cover;">
+                        <!-- Introduction Paragraph -->
+                        <p class="text-muted lead text-center px-3">
+                        I am a passionate developer with expertise in building modern web applications using the latest technologies. 
+                        <strong class="text-primary">I am hearing impaired in both ears.</strong> 
+                        Explore my projects and skills below. My expertise includes front-end development, back-end development, 
+                        cloud computing, command-line interface tools, and database management systems. Additionally, 
+                        I have a strong focus on development with a keen interest in learning and problem-solving.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills-section">
         <div class="container">
             <div class="row about-content">
-                <div class="col-12">
-                    <h2>Skills</h2>
-                    <h3>Front-End Stack</h3>
-                    <div class="row skills-list">
-                        <div class="col-4 col-md-2">
-                            <img src="/images/skills/html.png" alt="HTML" title="HTML">
-                        </div>
-                        <div class="col-4 col-md-2">
-                            <img src="/images/skills/css-icon5555.logowik.com.webp" alt="CSS" title="CSS">
-                        </div>
-                        <div class="col-4 col-md-2">
-                            <img src="/images/skills/JavaScript-Logo.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Front-End Frameworks</h3>
-                        <div class="row skills-list">
-                            <div class="col-4 col-md-2">
-                                <img src="/images/skills/bootstrap-logo.png" alt="BootStrap" title="BootStrap">
-                            </div>
-                            <div class="col-6 col-md-2">
-                                <img src="/images/skills/react-logo_fe.png" alt="ReactJS" title="ReactJS">
+                <div class="col-12 text-center">
+                    <h2 >Skills</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Front-End Stack</h3>
+                            <div class="row skills-list">
+                                <div class="col-4">
+                                    <img src="/images/skills/html.png" alt="HTML" title="HTML">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/css-icon5555.logowik.com.webp" alt="CSS" title="CSS">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/JavaScript-Logo.png" alt="JavaScript" title="JavaScript">
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <h3>Front-End Frameworks</h3>
+                            <div class="row skills-list">
+                                <div class="col-6">
+                                    <img src="/images/skills/bootstrap-logo.png" alt="BootStrap" title="BootStrap">
+                                </div>
+                                <div class="col-6">
+                                    <img src="/images/skills/react-logo_fe.png" alt="ReactJS" title="ReactJS">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-6">
                             <h3>Back-End Stack</h3>
@@ -107,232 +189,271 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <h3>Back-End Frameworks</h3>
-                    <div class="row skills-list">
-                        <div class="col-6">
-                            <img src="/images/skills/flask.png" alt="Flask" title="Flask">
-                        </div>
-                        <div class="col-6">
-                            <img src="/images/skills/django-logo-icon.webp" alt="Django" title="Django">
-                        </div>
-                    </div>
-                    <h3>Cloud Platform</h3>
-                    <div class="row skills-list">
-                        <div class="col-6">
-                            <img src="/images/skills/Amazon-Web-Services-AWS-Logo.png" alt="AWS" title="AWS">
-                        </div>
-                        <div class="col-6">
-                            <img src="/images/skills/google-cloud-icon-2048x1646-7admxejz.png" alt="Google Cloud Platform" title="Google Cloud Platform">
+                        <div class="col-md-6">
+                            <h3>Back-End Frameworks</h3>
+                            <div class="row skills-list">
+                                <div class="col-6">
+                                    <img src="/images/skills/flask.png" alt="Flask" title="Flask">
+                                </div>
+                                <div class="col-6">
+                                    <img src="/images/skills/django-logo-icon.webp" alt="Django" title="Django">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <h3>Databases</h3>
-                    <div class="row skills-list">
-                        <div class="col-4">
-                            <img src="/images/skills/mysql.jpg" alt="MySQL" title="MySQL">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/microsoft-sql-server-2022-enterprise.jpeg" alt="Microsoft-SQL-Server" title="Microsoft-SQL-Server">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/mongo.png" alt="MongoDB" title="MongoDB">
-                        </div>
-                    </div>
-                    <h3>LLMs/ML Frameworks</h3>
-                    <div class="row skills-list">
-                        <div class="col-4">
-                            <img src="/images/skills/Pandas_mark.svg.png" alt="Pandas" title="Pandas">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/numpy.png" alt="Numpy" title="Numpy">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/scikit-learn.png" alt="Scikit-Learn" title="Scikit-Learn">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/tensorflow.png" alt="TensorFlow" title="TensorFlow">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/keras.png" alt="Keras" title="Keras">
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/skills/seaborn.svg" alt="SeaBorn" title="SeaBorn">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Cloud Platform</h3>
+                            <div class="row skills-list">
+                                <div class="col-6">
+                                    <img src="/images/skills/Amazon-Web-Services-AWS-Logo.png" alt="AWS" title="AWS">
+                                </div>
+                                <div class="col-6">
+                                    <img src="/images/skills/google-cloud-icon-2048x1646-7admxejz.png" alt="Google Cloud Platform" title="Google Cloud Platform">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <h3>Dev-Ops/Tools</h3>
-                    <div class="row skills-list">
-                        <div class="col-4">
-                            <img src="/images/skills/git.png" alt="Git" title="Git">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Databases</h3>
+                            <div class="row skills-list">
+                                <div class="col-4">
+                                    <img src="/images/skills/mysql.jpg" alt="MySQL" title="MySQL">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/microsoft-sql-server-2022-enterprise.jpeg" alt="Microsoft-SQL-Server" title="Microsoft-SQL-Server">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/mongo.png" alt="MongoDB" title="MongoDB">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <img src="/images/skills/docker.png" alt="Docker" title="Docker">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>LLMs/ML Frameworks</h3>
+                            <div class="row skills-list">
+                                <div class="col-4">
+                                    <img src="/images/skills/Pandas_mark.svg.png" alt="Pandas" title="Pandas">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/numpy.png" alt="Numpy" title="Numpy">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/scikit-learn.png" alt="Scikit-Learn" title="Scikit-Learn">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/tensorflow.png" alt="TensorFlow" title="TensorFlow">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/keras.png" alt="Keras" title="Keras">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/seaborn.svg" alt="SeaBorn" title="SeaBorn">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <img src="/images/skills/jenkins.png" alt="Jenkins" title="Jenkins">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">                           
+                            <h3>Dev-Ops/Tools</h3>
+                            <div class="row skills-list">
+                                <div class="col-4">
+                                    <img src="/images/skills/git.png" alt="Git" title="Git">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/docker.png" alt="Docker" title="Docker">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/jenkins.png" alt="Jenkins" title="Jenkins">
+                                </div>
+                                <div class="col-4">
+                                    <img src="/images/skills/Icons8_flat_linux.svg.png" alt="Linux" title="Linux">
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <img src="/images/skills/Icons8_flat_linux.svg.png" alt="Linux" title="Linux">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <br>
+    <br>
     <!-- Resume Download Section -->
     <section id="resume">
         <div class="container text-center">
-            <a href="https://docs.google.com/document/d/1QnGY4K80yh7D0BpxuJtKPn64xcFFTgi3/edit?usp=drive_link&ouid=102303624786810357322&rtpof=true&sd=true" class="btn btn-primary" target="_blank" title="Download CV">
-                Download CV
+            <a href="https://docs.google.com/document/d/1QnGY4K80yh7D0BpxuJtKPn64xcFFTgi3/edit?usp=drive_link&ouid=102303624786810357322&rtpof=true&sd=true"
+            class="button-resume" target="_blank" title="Download CV">
+                <button type="button" class="btn custom-btn">Download CV</button>
             </a>
         </div>
     </section>
 
-    <!-- Resume section -->
-    <section class="education">
-        <div class="timeline">
-            <div class="container">
-                <img src="/images/education.png" alt="Education" class="timeline-image">
-                <div class="text-box">
-                    <h2>Bachelor of Technology in Computer Science and Engineering</h2>
-                    <small>2020-2024</small>
-                    <h3>Keshav Memorial Institute of Technology</h3>
-                    <h3>Hyderabad</h3>
-                    <p>Core Focus: Mathematics, Physics, and Computer Science</p>
-                    <p>Applied knowledge in any areas through hands-on projects and problem-solving coursework.</p>
+    <!-- Educational Details Section -->
+    <section class="education my-5">
+        <div class="container">
+            <h3 class="text-center mb-5">Educational Details</h3>
+            <div class="timeline">
+            <!-- Bachelor of Technology -->
+                <div class="container">
+                    <img src="/images/education.png" alt="Education" class="timeline-image">
+                    <div class="text-box">
+                        <h2>Bachelor of Technology in Computer Science and Engineering</h2>
+                        <small>2020-2024</small>
+                        <h3><a href="https://www.kmit.in/">Keshav Memorial Institute of Technology</a></h3>
+                        <h3>Hyderabad</h3>
+                        <ul>
+                            <li>Scored 7.3 GPA in Engineering</li>
+                            <li><p>Core Focus: Mathematics, Physics, and Computer Science</p></li>
+                            <li><p>Applied knowledge in areas through hands-on projects and problem-solving coursework.</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Intermediate -->
+                <div class="container">
+                    <img src="/images/education.png" alt="Education" class="timeline-image">
+                    <div class="text-box">
+                            <h2>Intermediate</h2>
+                            <small>2018-2020</small>
+                            <h3><a href="https://smjc.in/basheerbagh/">St. Mary's Junior College</a></h3>
+                            <h3>Hyderabad</h3>
+                            <ul>
+                                <li>Scored 63.5% in Intermediate</li>
+                                <li><p>Core Focus: Mathematics, Physics, and Chemistry</p></li>
+                                <li><p>Applied knowledge through hands-on applications of sciences.</p></li>
+                            </ul>
+                    </div>
+                </div>
+                <!-- High School -->
+                <div class="container">
+                    <img src="/images/education.png" alt="Education" class="timeline-image">
+                    <div class="text-box">
+                        <h2>High School</h2>
+                        <small>2017-2018</small>
+                        <h3><a href="https://sujathahighschool.com/">Sujatha High School</a></h3>
+                        <h3>Hyderabad</h3>
+                        <ul>
+                            <li>Scored 8.3 GPA in SSC</li>
+                            <li><p>Core Focus: Mathematics, Physics, Chemistry, Social Studies, and Computer Science</p></li>
+                            <li><p>Applied knowledge through hands-on projects, problem-solving coursework, and co-curricular activities.</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">My Projects</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="images/Screenshot 2023-11-20 204303.png" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">AI Virtual Keyboard</h5>
-                            <p class="card-text">This project descript that can be use how hands detect using virtual keyboard gesture with the help of OpenCV and MediaPipe.</p>
-                            <a href="https://github.com/raqueebali/AI-Virtual-Keyboard" class="btn btn-secondary" title="Go for project details.">View Details</a>
-                        </div>
-                    </div>
+          <!-- Section Heading -->
+          <h2 class="text-center mb-4">My Projects</h2>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm h-100">
+                <img src="images/Screenshot 2023-11-20 204303.png" class="card-img-top" alt="AI Virtual Keyboard">
+                <div class="card-body">
+                  <h5 class="card-title">AI Virtual Keyboard</h5>
+                  <p class="card-text">
+                    This project demonstrates how hand gestures can be detected to create a virtual keyboard using OpenCV and MediaPipe.
+                  </p>
+                  <a href="https://github.com/raqueebali/AI-Virtual-Keyboard" class="btn btn-secondary" title="Go for project details.">View Details</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="/images/Screenshot 2023-10-29 121459.png" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Gesture Controlled Volume</h5>
-                            <p class="card-text">This project shows how hands gesture can control the media-volume with the help of OpenCV and MediaPipe framework. If finger pointing up the volume will increase and pointing down the volume will decrease. </p>
-                            <a href="https://github.com/raqueebali/GestureControlVolume" class="btn btn-secondary" title="Go for project details.">View Details</a>
-                        </div>
-                    </div>
+              </div>
+            </div>
+      
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm h-100">
+                <img src="/images/Screenshot 2023-10-29 121459.png" class="card-img-top" alt="Gesture Controlled Volume">
+                <div class="card-body">
+                  <h5 class="card-title">Gesture Controlled Volume</h5>
+                  <p class="card-text">
+                    This project shows how hand gestures can control media volume using OpenCV and MediaPipe. Finger pointing up increases volume, and pointing down decreases it.
+                  </p>
+                  <a href="https://github.com/raqueebali/GestureControlVolume" class="btn btn-secondary" title="Go for project details.">View Details</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="/images/Screenshot 2024-12-21 172820.png" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Simple Calculator</h5>
-                            <p class="card-text">This project description can be Calculator using HTML, CSS and JavaScript with the help of BootStrap </p>
-                            <a href="https://github.com/raqueebali/Simple-Calculator" class="btn btn-secondary">View Details</a>
-                        </div>
-                    </div>
+              </div>
+            </div>
+      
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm h-100">
+                <img src="/images/Screenshot 2024-12-21 172820.png" class="card-img-top" alt="Simple Calculator">
+                <div class="card-body">
+                  <h5 class="card-title">Simple Calculator</h5>
+                  <p class="card-text">
+                    This project demonstrates a simple calculator built with HTML, CSS, and JavaScript, styled with Bootstrap.
+                  </p>
+                  <a href="https://github.com/raqueebali/Simple-Calculator" class="btn btn-secondary" title="Go for project details.">View Details</a>
+                </div>
+              </div>
+            </div>
+            <!-- New Project -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm h-100">
+                <img src="images/image.png" class="card-img-top" alt="Personal-Portfolio Page">
+                <div class="card-body">
+                    <h5 class="card-title">Personal Portfolio-Page</h5>
+                    <p class="card-text">
+                        This project demonstrates a personal portfolio page built with HTML, CSS, and JavaScript, styled with Bootstrap.This project demonstrates a personal portfolio page built with HTML, CSS, and JavaScript, styled with Bootstrap. It can be used responsive page for all devices.
+                    </p>
+                    <a href="https://github.com/raqueebali/portifolio-page" class="btn btn-secondary" title="Go for project details.">View Details</a>
+                </div>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Form Validation</h5>
-                            <p class="card-text">Description of the project goes here.</p>
-                            <a href="#" class="btn btn-secondary">View Details</a>
-                        </div>
+  
+          </div>
+        </div>
+    </section>
+      
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <!-- Section Heading -->
+            <h2 class="text-center mb-4">Contact Information</h2>
+            <p class="text-center text-muted mb-5">
+                Feel free to reach out to me for any queries or collaborations.
+            </p>
+    
+            <!-- Contact Information -->
+            <div class="row contact-info">
+                <!-- Email -->
+                <div class="col-md-6 text-center mb-4">
+                    <div class="icon mb-3">
+                        <i class="fas fa-envelope fa-3x text-primary"></i>
                     </div>
+                    <h5>Email Me At</h5>
+                    <p class="text-muted">raqueebali2001@gmail.com</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of the project goes here.</p>
-                            <a href="#" class="btn btn-secondary">View Details</a>
-                        </div>
+        
+                <!-- Phone/WhatsApp -->
+                <div class="col-md-6 text-center mb-4">
+                    <div class="icon mb-3">
+                        <i class="fas fa-phone fa-3x text-success"></i>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of the project goes here.</p>
-                            <a href="#" class="btn btn-secondary">View Details</a>
-                        </div>
-                    </div>
+                    <h5>Contact Me At Mobile/WhatsApp</h5>
+                    <p class="text-muted">+91 7981926704</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-    </section>
-    
+    <button id="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; background: #333; color: darkmagenta; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">↑ Top</button>
 
     <!-- Footer -->
     <footer class="bg-body-tertiary text-center">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
-            <section class="mb-4">
-            <!-- Linkedin -->
-            <a data-mdb-ripple-init
-                class="btn text-white btn-floating m-1 button-linkedin"
-                style="background-color: #0082ca;"
-                href="https://www.linkedin.com/in/mohammed-abdul-raqueeb-ali-866744270"
-                role="button"
-                title="Join my Linkedin.">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <!-- Github -->
-            <a data-mdb-ripple-init
-                class="btn text-white btn-floating m-1 button-github"
-                style="background-color: #333333;"
-                href="https://github.com/raqueebali"
-                role="button"
-                title="Join my GitHub.">
-                <i class="fab fa-github"></i>
-            </a>
-            <a data-mdb-ripple-init
-                class="btn text-white btn-floating m-1 button-leetcode"
-                style="background-color:rgb(236, 165, 85)"
-                href="https://leetcode.com/u/raqueebali/"
-                role="button"
-                title="Join my LeetCode.">
-                <!-- <i class="cib-leetcode"></i> -->
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-leetcode"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 13h7.5" /><path d="M9.424 7.268l4.999 -4.999" /><path d="M16.633 16.644l-2.402 2.415a3.189 3.189 0 0 1 -4.524 0l-3.77 -3.787a3.223 3.223 0 0 1 0 -4.544l3.77 -3.787a3.189 3.189 0 0 1 4.524 0l2.302 2.313" /></svg>
-            </a>
-            </section>
-            <!-- Section: Social media -->
+            
         </div>
         <!-- Grid container -->
         <!-- Copyright -->
@@ -341,6 +462,7 @@
         </div>
         <!-- Copyright -->
     </footer>
+    
 </body>
 <script src="script.js"></script>
 </html>
