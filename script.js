@@ -8,6 +8,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const resumeLink = document.getElementById('resume-link');
+// Open Resume in New Tab
+if (resumeLink) {  
+    resumeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        const resumeUrl = resumeLink.getAttribute('href');
+        window.open(resumeUrl, '_blank');
+    });
+}
 
 // Show/Hide Back-to-Top Button
 const backToTop = document.getElementById('back-to-top');
